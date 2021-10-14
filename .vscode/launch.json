@@ -1,0 +1,36 @@
+{
+    // Use o IntelliSense para saber mais sobre os atributos possíveis.
+    // Focalizar para exibir as descrições dos atributos existentes.
+    // Para obter mais informações, acesse: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        
+        {
+            "name": "app_pdr",
+            "cwd": "app_pdr",
+            "request": "launch",
+            "program": "lib/main_dev.dart",
+            "type": "dart"
+        },
+        // {
+        //     "name": "app_pdr (profile mode)",
+        //     "cwd": "app_pdr",
+        //     "request": "launch",
+        //     "type": "dart",
+        //     "flutterMode": "profile"
+        // },
+        // {
+        //     "name": "sing_module",
+        //     "cwd": "sign_in_module\\sing_module",
+        //     "request": "launch",
+        //     "type": "dart"
+        // },
+        // {
+        //     "name": "sing_module (profile mode)",
+        //     "cwd": "sign_in_module\\sing_module",
+        //     "request": "launch",
+        //     "type": "dart",
+        //     "flutterMode": "profile"
+        // }
+    ]
+}
