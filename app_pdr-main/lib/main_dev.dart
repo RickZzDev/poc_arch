@@ -1,12 +1,8 @@
-import 'package:app_pdr/route_controller/generate_route.dart';
-import 'package:core_pdr/api_helpers/urls/urls_address.dart';
-import 'package:core_pdr/singleton_helpers/global_variables_utils.dart';
 import 'package:flutter/material.dart';
-import 'package:sing_module/sign_in_module.dart';
 import 'package:get_it/get_it.dart';
+import 'package:features/sign_in_module/lib/sign_in_module.dart';
 
 void main() {
-  AppSingletonUtils.setUp("DEV");
   runApp(MyApp());
 }
 
@@ -19,7 +15,6 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      onGenerateRoute: GenerateRoute.generateRoute,
       home: SingInBuilder(),
     );
   }

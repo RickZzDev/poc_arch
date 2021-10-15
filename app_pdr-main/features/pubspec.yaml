@@ -1,4 +1,4 @@
-name: app_pdr
+name: features
 description: A new Flutter project.
 
 # The following line prevents the package from being accidentally published to
@@ -23,9 +23,11 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  get_it: 6.0.0
-  features:
-    path: ./features
+  flutter_bloc:
+  flutter_svg:
+  core_pdr:
+    path: ../core_pdr
+
   # sing_module:
   #   path: ../sign_in_module
   
@@ -38,6 +40,7 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  mocktail:
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

@@ -1,9 +1,9 @@
 import 'package:flutter_test/flutter_test.dart';
-// import 'package:http/http.dart' as http;
-import 'package:sing_module/viewmodel/auth_view_model.dart';
 import 'package:mocktail/mocktail.dart';
-import 'package:sing_module/repository/auth_repository.dart';
-import 'package:sing_module/repository/models/auth_response.dart';
+
+import '../../lib/repository/auth_repository.dart';
+import '../../lib/repository/models/auth_response.dart';
+import '../../lib/viewmodel/auth_view_model.dart';
 
 class SpyAuthImplementation extends Mock implements AuthRepository {}
 

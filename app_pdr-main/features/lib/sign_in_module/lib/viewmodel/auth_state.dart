@@ -15,6 +15,6 @@ class AuthError extends AuthState {
 }
 
 class AuthSuccess extends AuthState {
-  final AuthResponse response;
+  final AuthModel response;
   const AuthSuccess(this.response);
 }

@@ -1,11 +1,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_form_builder/flutter_form_builder.dart';
-import 'package:sing_module/view/components/logo_component.dart';
-import 'package:sing_module/view/components/page_title.dart';
 
 import '../../../viewmodel/auth_view_model.dart';
+import '../../components/logo_component.dart';
+import '../../components/page_title.dart';
 
 class SigninPage extends StatefulWidget {
   const SigninPage({
@@ -17,8 +16,6 @@ class SigninPage extends StatefulWidget {
 }
 
 class _SigninPageState extends State<SigninPage> {
-  final GlobalKey<FormBuilderState> formKey = GlobalKey<FormBuilderState>();
-
   late SigninViewModel cubit;
 
   @override

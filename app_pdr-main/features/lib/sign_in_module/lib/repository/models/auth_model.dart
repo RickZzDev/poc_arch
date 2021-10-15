@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:sing_module/repository/models/auth_response.dart';
+
+import 'auth_response.dart';
 
 ///Classe model que deve ser emitida no estado da cubit para a tela
 ///Deve conter o que é necessário para a tela e conter prorpiedades pertinentes
