@@ -32,7 +32,6 @@ class DioRequester implements ApiHelper {
     try {
       await dio.get(
         url,
-        options: Options(headers: header),
       );
     } catch (e) {
       rethrow;
