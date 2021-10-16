@@ -88,7 +88,7 @@ packages:
   core_pdr:
     dependency: "direct main"
     description:
-      path: "../core_pdr"
+      path: "../lib/core_pdr"
       relative: true
     source: path
     version: "1.0.0+1"

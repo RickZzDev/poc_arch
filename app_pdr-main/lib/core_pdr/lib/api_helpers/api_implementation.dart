@@ -1,6 +1,9 @@
 library api_helper;
 
+import 'package:core_pdr/api_helpers/dio_interceptors/session_interceptor.dart';
+import 'package:core_pdr/utils/session_service.dart';
 import 'package:dio/dio.dart';
+import 'package:dio/native_imp.dart';
 
 abstract class ApiHelper {
   Future<dynamic> fetch(
@@ -26,11 +29,21 @@ abstract class ApiHelper {
 
 ///Implemntação da lib do DIO
 class DioRequester implements ApiHelper {
-  Dio dio = Dio();
+  DioForNative dio = DioForNative();
+  DioRequester() {
+    // dio.options.baseUrl = env['API_URL']!;
+    dio.interceptors.add(InterceptorsWrapper(
+      onError: (e, handler) {},
+    ));
+    dio.interceptors.add(LogInterceptor(requestBody: true, responseBody: true));
+    dio.interceptors.add(SessionInterceptor(SessionService(dio)));
+    dio.options.connectTimeout = 60000;
+  }
+
   @override
   Future fetch(String url, Map<String, dynamic> header) async {
     try {
-      await dio.get(
+      return await dio.get(
         url,
       );
     } catch (e) {

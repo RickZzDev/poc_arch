@@ -24,6 +24,9 @@ dependencies:
   flutter:
     sdk: flutter
   dio:
+  overlay_support:
+  flutter_modular:
+  flutter_secure_storage:
 
   # sing_module:
   #   path: ../sign_in_module

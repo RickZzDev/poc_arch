@@ -26,7 +26,7 @@ dependencies:
   flutter_bloc:
   flutter_svg:
   core_pdr:
-    path: ../core_pdr
+    path: ../lib/core_pdr
 
   # sing_module:
   #   path: ../sign_in_module
